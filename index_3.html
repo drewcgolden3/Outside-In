@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Outside In — Outdoor Athleticwear in Cohasset, MA</title>
+<meta name="description" content="Outside In is your neighborhood outdoor outfitter on the South Shore. Apparel, gear, footwear & rentals from Patagonia, Cotopaxi, Flylow and more — at 29 South Main St, Cohasset MA.">
+
+<!-- Open Graph / social sharing -->
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="Outside In — Outdoor Athleticwear · Cohasset, MA">
+<meta property="og:description" content="Your neighborhood outfitter on the South Shore. Gear, apparel, footwear & rentals.">
+<meta property="og:image" content="https://drewcgolden3.github.io/Outside-In/images/owner-storefront.jpg">
+<meta property="og:locale" content="en_US">
+
+<!-- Local business structured data for Google -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportingGoodsStore",
+  "name": "Outside In",
+  "description": "Outdoor athleticwear, gear, footwear and rentals on the South Shore.",
+  "image": "https://drewcgolden3.github.io/Outside-In/images/owner-storefront.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "29 South Main Street",
+    "addressLocality": "Cohasset",
+    "addressRegion": "MA",
+    "postalCode": "02025",
+    "addressCountry": "US"
+  },
+  "email": "tracy@outsideincohasset.com",
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "10:00", "closes": "18:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "18:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "10:00", "closes": "17:00"}
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..700&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="images/patagonia.jpg">
+
+<style>
+  :root{
+    --bone:#EFE8D8;
+    --cream:#F6F1E6;
+    --pine:#26322463;
+    --pine-solid:#222C20;
+    --pine-deep:#1A2218;
+    --moss:#566346;
+    --sage:#8C9579;
+    --clay:#B65F38;
+    --clay-deep:#9A4E2D;
+    --stone:#A39A86;
+    --ink:#1C231A;
+    --line:rgba(28,35,26,.14);
+    --shadow:0 18px 50px -18px rgba(26,34,24,.45);
+    --display:"Fraunces",Georgia,serif;
+    --body:"Hanken Grotesk",system-ui,sans-serif;
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:var(--body);
+    background:var(--bone);
+    color:var(--ink);
+    line-height:1.6;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* grain texture overlay */
+  body::after{
+    content:"";position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:.04;
+    background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  ::selection{background:var(--clay);color:var(--cream)}
+
+  h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.02;letter-spacing:-.02em}
+  a{color:inherit;text-decoration:none}
+  img{display:block;width:100%;height:100%;object-fit:cover}
+
+  .wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+  .eyebrow{
+    font-family:var(--body);font-size:.72rem;font-weight:600;letter-spacing:.28em;
+    text-transform:uppercase;color:var(--clay-deep);display:inline-block;
+  }
+
+  /* ============ NAV ============ */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:1000;
+    padding:22px 0;transition:background .4s ease,padding .4s ease,box-shadow .4s ease;
+  }
+  header.scrolled{
+    background:rgba(239,232,216,.92);backdrop-filter:blur(12px);padding:13px 0;
+    box-shadow:0 1px 0 var(--line);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:24px}
+  .brand{display:flex;align-items:baseline;gap:9px;font-family:var(--display);font-size:1.5rem;font-weight:600;letter-spacing:-.03em;color:var(--cream);transition:color .4s}
+  .brand .dot{color:var(--clay)}
+  header.scrolled .brand{color:var(--ink)}
+  .navlinks{display:flex;align-items:center;gap:34px;list-style:none}
+  .navlinks a{font-size:.83rem;font-weight:500;letter-spacing:.04em;color:var(--cream);opacity:.9;transition:color .4s,opacity .2s;position:relative}
+  header.scrolled .navlinks a{color:var(--ink)}
+  .navlinks a::after{content:"";position:absolute;left:0;bottom:-5px;height:1.5px;width:0;background:var(--clay);transition:width .28s ease}
+  .navlinks a:hover{opacity:1}
+  .navlinks a:hover::after{width:100%}
+  .nav-cta{
+    font-size:.82rem;font-weight:600;letter-spacing:.04em;padding:10px 20px;border-radius:100px;
+    background:var(--clay);color:var(--cream);transition:transform .2s,background .2s;white-space:nowrap;
+  }
+  .nav-cta:hover{background:var(--clay-deep);transform:translateY(-1px)}
+  .burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:6px}
+  .burger span{width:26px;height:2px;background:var(--cream);transition:.3s}
+  header.scrolled .burger span{background:var(--ink)}
+
+  /* ============ CINEMATIC HERO ============ */
+  /* The track is tall on purpose — it's the scroll "runway."
+     The stage is sticky, so it pins to the screen while we scroll the runway.
+     Each .layer is a full-bleed image we crossfade by driving opacity+scale
+     from scroll progress (see the script at the bottom). */
+  .cinema{position:relative}
+  .cinema-track{position:relative;height:400vh}
+  .cinema-stage{
+    position:sticky;top:0;height:100svh;min-height:560px;overflow:hidden;
+    display:flex;align-items:flex-end;background:var(--pine-deep);
+  }
+  .layer{
+    position:absolute;inset:0;background-size:cover;background-position:center;
+    will-change:opacity,transform;transform-origin:50% 50%;opacity:0;backface-visibility:hidden;
+  }
+  .layer[data-layer="harbor"]{opacity:1}
+  .cinema-scrim{
+    position:absolute;inset:0;z-index:5;pointer-events:none;
+    background:linear-gradient(180deg,rgba(26,34,24,.58) 0%,rgba(26,34,24,.10) 30%,rgba(26,34,24,.28) 64%,rgba(26,34,24,.88) 100%);
+  }
+  .cinema-copy{position:relative;z-index:6;width:100%;padding:0 28px 8vh}
+  .cinema-inner{max-width:1240px;margin:0 auto;position:relative;min-height:clamp(330px,48vh,470px)}
+  .phrase{position:absolute;left:0;right:0;bottom:0;will-change:opacity,transform;opacity:0}
+  .phrase[data-phrase="out"]{opacity:1}
+  .phrase .eyebrow{color:var(--bone);margin-bottom:14px;text-shadow:0 1px 10px rgba(0,0,0,.5)}
+  .phrase h2{
+    color:var(--cream);font-weight:600;letter-spacing:-.035em;
+    font-size:clamp(3rem,10vw,8rem);text-shadow:0 2px 30px rgba(0,0,0,.35);
+  }
+  .phrase h2 em{font-style:italic;font-weight:400;color:var(--bone)}
+  /* the final resting state — mirrors the original hero */
+  .brandblock h1{
+    color:var(--cream);font-size:clamp(3.4rem,11vw,9.5rem);font-weight:600;letter-spacing:-.04em;
+    text-shadow:0 2px 30px rgba(0,0,0,.3);
+  }
+  .brandblock h1 .dot{color:var(--clay)}
+  .brandblock h1 em{font-style:italic;font-weight:400;color:var(--bone);display:block;font-size:.62em;margin-top:-.06em}
+  .brandblock .lede{
+    color:var(--bone);max-width:520px;font-size:clamp(1.05rem,1.6vw,1.3rem);margin:24px 0 32px;
+    font-weight:300;text-shadow:0 1px 12px rgba(0,0,0,.4);
+  }
+  .cinema-cue{
+    position:absolute;left:50%;bottom:24px;transform:translateX(-50%);z-index:7;
+    color:var(--cream);font-size:.66rem;letter-spacing:.34em;text-transform:uppercase;font-weight:600;
+    display:flex;flex-direction:column;align-items:center;gap:9px;
+  }
+  .cue-line{width:1px;height:38px;background:linear-gradient(var(--cream),rgba(246,241,230,0));animation:cuebob 2.4s ease-in-out infinite}
+  @keyframes cuebob{0%,100%{transform:scaleY(.6);opacity:.5;transform-origin:top}50%{transform:scaleY(1);opacity:1;transform-origin:top}}
+
+  .hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{
+    display:inline-flex;align-items:center;gap:9px;padding:15px 28px;border-radius:100px;
+    font-weight:600;font-size:.92rem;letter-spacing:.02em;transition:transform .22s,background .22s,box-shadow .22s;
+  }
+  .btn-primary{background:var(--cream);color:var(--ink)}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+  .btn-ghost{background:rgba(246,241,230,.12);color:var(--cream);border:1px solid rgba(246,241,230,.45);backdrop-filter:blur(4px)}
+  .btn-ghost:hover{background:rgba(246,241,230,.22);transform:translateY(-2px)}
+  .btn .arr{transition:transform .22s}
+  .btn:hover .arr{transform:translateX(4px)}
+
+  /* respect users who prefer less motion: collapse the runway, show the resting state */
+  @media(prefers-reduced-motion:reduce){
+    .cinema-track{height:100svh}
+    .cinema-stage{position:relative}
+    .cue-line{animation:none}
+  }
+
+  /* ticker */
+  .ticker{
+    position:relative;z-index:2;background:var(--clay);color:var(--cream);overflow:hidden;
+    border-top:1px solid rgba(0,0,0,.1);
+  }
+  .ticker-track{display:flex;gap:0;white-space:nowrap;animation:scroll 30s linear infinite;width:max-content}
+  .ticker-track span{font-family:var(--display);font-size:1.05rem;font-style:italic;padding:13px 0;display:flex;align-items:center}
+  .ticker-track span::after{content:"✦";font-style:normal;margin:0 34px;font-size:.7rem;opacity:.7}
+  @keyframes scroll{to{transform:translateX(-50%)}}
+
+  /* ============ SECTIONS ============ */
+  section{position:relative}
+  .pad{padding:clamp(70px,11vh,140px) 0}
+  .sec-head{max-width:680px;margin-bottom:54px}
+  .sec-head h2{font-size:clamp(2.2rem,5vw,4rem);margin-top:14px}
+  .sec-head h2 em{font-style:italic;color:var(--clay-deep)}
+  .sec-head p{margin-top:18px;font-size:1.1rem;color:var(--moss);font-weight:300;max-width:560px}
+
+  /* brand wall */
+  .brands{background:var(--pine-solid);color:var(--cream)}
+  .brands .eyebrow{color:var(--sage)}
+  .brands h2{color:var(--cream)}
+  .brands p{color:rgba(246,241,230,.7)}
+  .brand-grid{
+    display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(246,241,230,.16);
+    border-left:1px solid rgba(246,241,230,.16);margin-top:10px;
+  }
+  .brand-cell{
+    padding:34px 20px;border-right:1px solid rgba(246,241,230,.16);border-bottom:1px solid rgba(246,241,230,.16);
+    display:flex;align-items:center;justify-content:center;font-family:var(--display);
+    font-size:1.45rem;font-weight:500;letter-spacing:-.01em;transition:background .3s,color .3s;
+    text-align:center;min-height:108px;
+  }
+  .brand-cell:hover{background:var(--clay);color:var(--cream)}
+
+  /* gallery */
+  .gallery-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+  .g-card{position:relative;overflow:hidden;border-radius:6px;min-height:240px;background:var(--sage)}
+  .g-card img{transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+  .g-card:hover img{transform:scale(1.06)}
+  .g-card .cap{
+    position:absolute;left:20px;bottom:18px;z-index:2;color:var(--cream);
+  }
+  .g-card .cap small{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;opacity:.85;font-weight:600}
+  .g-card .cap h3{font-size:1.5rem;margin-top:3px;text-shadow:0 2px 14px rgba(0,0,0,.5)}
+  .g-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(26,34,24,.78));z-index:1}
+  .g-a{grid-column:span 7;min-height:380px}
+  .g-b{grid-column:span 5;min-height:380px}
+  .g-c{grid-column:span 4}
+  .g-d{grid-column:span 4}
+  .g-e{grid-column:span 4}
+  .gallery-note{margin-top:30px;font-style:italic;font-family:var(--display);font-size:1.3rem;color:var(--moss);max-width:640px}
+
+  /* story */
+  .story{background:var(--cream)}
+  .story-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:center}
+  .story-img{position:relative;border-radius:8px;overflow:hidden;min-height:520px;box-shadow:var(--shadow)}
+  .story-img .badge{
+    position:absolute;left:22px;bottom:22px;background:var(--cream);color:var(--ink);
+    padding:14px 20px;border-radius:6px;font-size:.8rem;font-weight:600;z-index:2;line-height:1.4;
+  }
+  .story-img .badge b{font-family:var(--display);display:block;font-size:1.05rem}
+  .pullquote{
+    font-family:var(--display);font-style:italic;font-size:clamp(1.6rem,3vw,2.4rem);
+    line-height:1.18;color:var(--pine-solid);margin:8px 0 28px;border-left:3px solid var(--clay);padding-left:22px;
+  }
+  .story-grid p{color:var(--moss);font-size:1.06rem;margin-bottom:18px}
+  .story-grid p:last-child{margin-bottom:0}
+
+  /* rentals */
+  .rentals{background:var(--moss);color:var(--cream);overflow:hidden}
+  .rentals .wrap{position:relative;z-index:2}
+  .rentals .eyebrow{color:var(--bone)}
+  .rentals-flex{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;flex-wrap:wrap}
+  .rentals h2{color:var(--cream);font-size:clamp(2.4rem,6vw,4.6rem);max-width:760px}
+  .rentals h2 em{font-style:italic;color:var(--bone)}
+  .rentals p{color:rgba(246,241,230,.85);max-width:440px;font-size:1.1rem;font-weight:300;margin-top:18px}
+  .rentals .btn-primary{background:var(--cream);color:var(--ink)}
+
+  /* visit */
+  .visit{background:var(--bone)}
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:10px;overflow:hidden;box-shadow:var(--shadow)}
+  .visit-info{background:var(--pine-solid);color:var(--cream);padding:clamp(36px,5vw,56px)}
+  .visit-info .eyebrow{color:var(--sage)}
+  .visit-info h2{color:var(--cream);font-size:clamp(2rem,4vw,3rem);margin:12px 0 28px}
+  .status{display:inline-flex;align-items:center;gap:9px;padding:8px 16px;border-radius:100px;font-size:.82rem;font-weight:600;margin-bottom:30px;background:rgba(246,241,230,.1)}
+  .status .pip{width:9px;height:9px;border-radius:50%;background:var(--sage)}
+  .status.open .pip{background:#7FB069;box-shadow:0 0 0 4px rgba(127,176,105,.25)}
+  .status.closed .pip{background:var(--clay)}
+  .vrow{display:flex;gap:14px;padding:16px 0;border-top:1px solid rgba(246,241,230,.16)}
+  .vrow:first-of-type{border-top:0}
+  .vrow .ic{flex:0 0 22px;color:var(--sage);font-size:1.05rem;line-height:1.5}
+  .vrow .lbl{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:3px}
+  .vrow .val{font-size:1rem}
+  .vrow .val a{border-bottom:1px solid rgba(246,241,230,.3);transition:border-color .2s}
+  .vrow .val a:hover{border-color:var(--clay)}
+  .hours-list{list-style:none;font-size:.97rem}
+  .hours-list li{display:flex;justify-content:space-between;padding:4px 0;max-width:280px}
+  .hours-list li.today{color:#cfe0bf;font-weight:600}
+  .hours-list li.today::after{content:" • today";color:var(--sage);font-weight:400;font-size:.8rem}
+  .visit-map{min-height:480px;background:var(--sage);position:relative}
+  .visit-map iframe{width:100%;height:100%;border:0;filter:saturate(.9)}
+  .visit-socials{display:flex;gap:12px;margin-top:28px}
+  .visit-socials a{width:42px;height:42px;border-radius:50%;border:1px solid rgba(246,241,230,.3);display:flex;align-items:center;justify-content:center;transition:background .2s,border-color .2s;font-size:.95rem}
+  .visit-socials a:hover{background:var(--clay);border-color:var(--clay)}
+
+  /* footer */
+  footer{background:var(--pine-deep);color:rgba(246,241,230,.7);padding:64px 0 30px}
+  .foot-grid{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:40px;border-bottom:1px solid rgba(246,241,230,.12)}
+  .foot-brand{font-family:var(--display);font-size:2rem;color:var(--cream);font-weight:600}
+  .foot-brand .dot{color:var(--clay)}
+  .foot-tag{margin-top:8px;font-style:italic;font-family:var(--display);color:var(--sage)}
+  .foot-links{display:flex;gap:50px;flex-wrap:wrap}
+  .foot-col h4{font-family:var(--body);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);margin-bottom:14px;font-weight:600}
+  .foot-col a,.foot-col p{display:block;font-size:.92rem;margin-bottom:9px;transition:color .2s}
+  .foot-col a:hover{color:var(--cream)}
+  .foot-bottom{display:flex;justify-content:space-between;padding-top:26px;font-size:.82rem;flex-wrap:wrap;gap:12px}
+  .foot-bottom .credit{color:var(--sage)}
+  .foot-bottom .credit a{color:var(--bone);border-bottom:1px solid var(--moss)}
+
+  /* reveal animation */
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+  /* ============ RESPONSIVE ============ */
+  @media(max-width:900px){
+    .burger{display:flex}
+    .navlinks{
+      position:fixed;inset:0 0 0 auto;width:min(78vw,320px);background:var(--pine-solid);
+      flex-direction:column;align-items:flex-start;justify-content:center;gap:28px;padding:40px;
+      transform:translateX(100%);transition:transform .4s cubic-bezier(.2,.7,.2,1);z-index:1001;
+    }
+    .navlinks.open{transform:none}
+    .navlinks a{color:var(--cream);font-size:1.25rem}
+    header.scrolled .navlinks a{color:var(--cream)}
+    .nav-cta{display:none}
+    .story-grid{grid-template-columns:1fr;gap:34px}
+    .story-img{min-height:380px;order:-1}
+    .visit-grid{grid-template-columns:1fr}
+    .visit-map{min-height:340px;order:-1}
+    .brand-grid{grid-template-columns:repeat(2,1fr)}
+    .gallery-grid{grid-template-columns:repeat(2,1fr)}
+    .g-a,.g-b,.g-c,.g-d,.g-e{grid-column:span 1;min-height:240px}
+    .g-a{grid-column:span 2}
+  }
+  @media(max-width:520px){
+    .wrap{padding:0 20px}
+    .cinema-copy{padding:0 20px 8vh}
+    .gallery-grid{grid-template-columns:1fr}
+    .g-a{grid-column:span 1}
+    .brand-grid{grid-template-columns:1fr 1fr}
+    .foot-links{gap:30px}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header id="hdr">
+  <div class="wrap nav">
+    <a href="#top" class="brand">Outside In<span class="dot">.</span></a>
+    <ul class="navlinks" id="nav">
+      <li><a href="#store">In Store</a></li>
+      <li><a href="#brands">Brands</a></li>
+      <li><a href="#story">Our Story</a></li>
+      <li><a href="#rentals">Rentals</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <a href="#visit" class="nav-cta">Visit the Shop</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ============ CINEMATIC HERO ============ -->
+<section class="cinema" id="top" aria-label="From the South Shore to the shop">
+  <div class="cinema-track">
+    <div class="cinema-stage">
+      <!-- image layers, crossfaded by scroll (bottom of DOM = top of stack) -->
+      <div class="layer" data-layer="harbor" style="background-image:url('images/cohasset-harbor.jpg')"></div>
+      <div class="layer" data-layer="store"  style="background-image:url('images/storefront-fall.jpg')"></div>
+      <div class="layer" data-layer="inside" style="background-image:url('images/patagonia.jpg')"></div>
+
+      <div class="cinema-scrim"></div>
+
+      <!-- text that crossfades through the journey -->
+      <div class="cinema-copy">
+        <div class="cinema-inner">
+          <div class="phrase" data-phrase="out">
+            <span class="eyebrow">Cohasset, Massachusetts</span>
+            <h2>Play hard <em>outside.</em></h2>
+          </div>
+          <div class="phrase" data-phrase="in">
+            <span class="eyebrow">29 South Main Street</span>
+            <h2>Feel good <em>inside.</em></h2>
+          </div>
+          <div class="phrase brandblock" data-phrase="brand">
+            <h1>Outside In<span class="dot">.</span><em>Outdoor Athleticwear.</em></h1>
+            <p class="lede">Your neighborhood outfitter on the South Shore — where the right kit makes every adventure better.</p>
+            <div class="hero-btns">
+              <a href="#store" class="btn btn-primary">See What's In Store <span class="arr">→</span></a>
+              <a href="#story" class="btn btn-ghost">Our Story</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cinema-cue" data-cue><span>Scroll</span><span class="cue-line"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span>Play hard outside</span><span>Feel good inside</span><span>29 South Main St · Cohasset MA</span><span>New arrivals every season</span>
+    <span>Play hard outside</span><span>Feel good inside</span><span>29 South Main St · Cohasset MA</span><span>New arrivals every season</span>
+  </div>
+</div>
+
+<!-- GALLERY -->
+<section class="pad" id="store">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">A peek inside</span>
+      <h2>Just a glimpse of what's <em>waiting for you.</em></h2>
+      <p>Racks, shelves, and walls packed with gear, apparel, footwear, and accessories across dozens of brands. There's always something new to discover.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="g-card g-a reveal">
+        <img src="images/patagonia.jpg" alt="Patagonia jackets and sweaters">
+        <div class="cap"><small>Apparel</small><h3>Patagonia</h3></div>
+      </div>
+      <div class="g-card g-b reveal">
+        <img src="images/cotopaxi.jpg" alt="Cotopaxi bags and gear">
+        <div class="cap"><small>Bags &amp; Packs</small><h3>Cotopaxi</h3></div>
+      </div>
+      <div class="g-card g-c reveal">
+        <img src="images/paddleboard.jpg" alt="Stand up paddle boards">
+        <div class="cap"><small>Water</small><h3>Paddle Boards</h3></div>
+      </div>
+      <div class="g-card g-d reveal">
+        <img src="images/flylow-gloves.jpg" alt="Flylow gloves and mittens">
+        <div class="cap"><small>Winter Gear</small><h3>Flylow Gloves</h3></div>
+      </div>
+      <div class="g-card g-e reveal">
+        <img src="images/sneakers-accessories.jpg" alt="Sneakers and accessories">
+        <div class="cap"><small>Footwear &amp; Accessories</small><h3>Sneakers &amp; Hats</h3></div>
+      </div>
+    </div>
+    <p class="gallery-note reveal">These photos are just a small taste — the store is packed with much more. You really have to come see it.</p>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<section class="pad brands" id="brands">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Our brands</span>
+      <h2>We carry what we <em>believe in.</em></h2>
+      <p>Carefully chosen gear from the makers we trust — the same labels we reach for on the trail, the river, and the mountain.</p>
+    </div>
+    <div class="brand-grid reveal">
+      <div class="brand-cell">Patagonia</div>
+      <div class="brand-cell">Cotopaxi</div>
+      <div class="brand-cell">Flylow</div>
+      <div class="brand-cell">Stio</div>
+      <div class="brand-cell">Retrospec</div>
+      <div class="brand-cell">Pistil</div>
+      <div class="brand-cell">ACRA</div>
+      <div class="brand-cell">Smartwool</div>
+      <div class="brand-cell">Icebreaker</div>
+      <div class="brand-cell">Darn Tough</div>
+      <div class="brand-cell">Kühl</div>
+      <div class="brand-cell">prAna</div>
+    </div>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="pad story" id="story">
+  <div class="wrap">
+    <div class="story-grid">
+      <div class="story-img reveal">
+        <img src="images/owner-storefront.jpg" alt="The owner outside the Outside In store in Cohasset">
+        <div class="badge"><b>29 South Main St</b>Cohasset, Massachusetts</div>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Our story</span>
+        <h2 style="font-size:clamp(2rem,4vw,3.2rem);margin-top:14px">Born from a love of the outdoors.</h2>
+        <p class="pullquote">"Play hard outside — feel good inside."</p>
+        <p>A few years in Jackson, Wyoming barely scratched the outdoor itch. The more time spent on the mountain, the river, or the trail, the more it became clear: the right gear changes everything.</p>
+        <p>Outside In was born from that passion — and a desire to bring it home to the South Shore. Seeing you run by or cycle through town still brings a smile.</p>
+        <p>We're more than a shop. We're a hub — a place to get fitted, find your next race, join a training group, and talk to people who actually do this stuff.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RENTALS -->
+<section class="pad rentals" id="rentals">
+  <div class="wrap">
+    <div class="rentals-flex reveal">
+      <div>
+        <span class="eyebrow">Rentals</span>
+        <h2>Bikes, boards <em>&amp; more.</em></h2>
+        <p>Don't own it yet? Rent it. Seasonal bike rentals and water-sport gear so you can try before you commit — or just grab a ride for the day.</p>
+      </div>
+      <a href="#visit" class="btn btn-primary">Ask About Availability <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section class="pad visit" id="visit">
+  <div class="wrap">
+    <div class="sec-head reveal" style="text-align:center;margin:0 auto 48px">
+      <span class="eyebrow">Find us</span>
+      <h2>Come say hello.</h2>
+    </div>
+    <div class="visit-grid reveal">
+      <div class="visit-info">
+        <span class="eyebrow">Outside In · Cohasset</span>
+        <h2>Stop by the shop.</h2>
+        <div class="status" id="status"><span class="pip"></span><span id="statusText">Checking hours…</span></div>
+
+        <div class="vrow">
+          <div class="ic">📍</div>
+          <div><div class="lbl">Address</div>
+            <div class="val"><a href="https://maps.google.com/maps?q=29+South+Main+Street+Cohasset+MA" target="_blank" rel="noopener">29 South Main Street, Cohasset, MA 02025</a></div>
+          </div>
+        </div>
+        <div class="vrow">
+          <div class="ic">🕑</div>
+          <div style="flex:1"><div class="lbl">Hours</div>
+            <ul class="hours-list" id="hours">
+              <li data-day="1"><span>Mon – Fri</span><span>10am – 6pm</span></li>
+              <li data-day="2" hidden></li>
+              <li data-day="6"><span>Saturday</span><span>9am – 6pm</span></li>
+              <li data-day="0"><span>Sunday</span><span>10am – 5pm</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="vrow">
+          <div class="ic">✉️</div>
+          <div><div class="lbl">Contact</div>
+            <div class="val"><a href="mailto:tracy@outsideincohasset.com">tracy@outsideincohasset.com</a></div>
+          </div>
+        </div>
+        <div class="visit-socials">
+          <a href="https://www.instagram.com/osicoh/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.facebook.com/p/Outside-In-100063701733949/" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M14 8.5V6.8c0-.8.2-1.3 1.4-1.3H17V2.6c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.1v1.9H8v3h2.6V21H14v-7.5h2.5l.4-3H14z"/></svg>
+          </a>
+          <a href="mailto:tracy@outsideincohasset.com" aria-label="Email" title="Email">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="visit-map">
+        <iframe src="https://maps.google.com/maps?q=29%20South%20Main%20Street%20Cohasset%20MA&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy" title="Map to Outside In, Cohasset MA"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">Outside In<span class="dot">.</span></div>
+        <div class="foot-tag">Outdoor Athleticwear · Cohasset, MA</div>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h4>Explore</h4>
+          <a href="#store">In Store</a>
+          <a href="#brands">Brands</a>
+          <a href="#story">Our Story</a>
+          <a href="#rentals">Rentals</a>
+        </div>
+        <div class="foot-col">
+          <h4>Visit</h4>
+          <p>29 South Main Street</p>
+          <p>Cohasset, MA 02025</p>
+          <a href="mailto:tracy@outsideincohasset.com">tracy@outsideincohasset.com</a>
+        </div>
+        <div class="foot-col">
+          <h4>Hours</h4>
+          <p>Mon–Fri · 10–6</p>
+          <p>Sat · 9–6</p>
+          <p>Sun · 10–5</p>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr"></span> Outside In. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // year
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // ===== CINEMATIC HERO: scroll position drives the whole sequence =====
+  (function(){
+    const track = document.querySelector('.cinema-track');
+    if(!track) return;
+    const L = {
+      harbor: document.querySelector('[data-layer="harbor"]'),
+      store:  document.querySelector('[data-layer="store"]'),
+      inside: document.querySelector('[data-layer="inside"]'),
+    };
+    const P = {
+      out:   document.querySelector('[data-phrase="out"]'),
+      thru:  document.querySelector('[data-phrase="in"]'),
+      brand: document.querySelector('[data-phrase="brand"]'),
+    };
+    const cue = document.querySelector('[data-cue]');
+
+    const clamp=(v,a,b)=>Math.min(Math.max(v,a),b);
+    const seg=(p,a,b)=>clamp((p-a)/(b-a),0,1);          // 0→1 ramp between a and b
+    const lerp=(a,b,t)=>a+(b-a)*t;
+
+    // Accessibility: if the user prefers reduced motion, skip the scrub and
+    // just show the resting state (store interior + brand block).
+    if(matchMedia('(prefers-reduced-motion: reduce)').matches){
+      L.harbor.style.opacity=0; L.store.style.opacity=0;
+      L.inside.style.opacity=1; L.inside.style.transform='scale(1)';
+      P.out.style.opacity=0; P.thru.style.opacity=0;
+      P.brand.style.opacity=1; P.brand.style.transform='none';
+      if(cue) cue.style.display='none';
+      return;
+    }
+
+    let target=0, eased=0;
+    function read(){
+      const scrollable = track.offsetHeight - window.innerHeight;
+      const scrolled = clamp(-track.getBoundingClientRect().top, 0, scrollable);
+      target = scrollable>0 ? scrolled/scrollable : 0;
+    }
+    function apply(p){
+      // --- image layers: crossfade + subtle Ken Burns scale ---
+      L.harbor.style.opacity   = 1 - seg(p,0.22,0.44);
+      L.harbor.style.transform = 'scale('+(1.12 - 0.12*seg(p,0,0.46)).toFixed(4)+')';
+
+      L.store.style.opacity    = seg(p,0.26,0.46) * (1 - seg(p,0.60,0.80));
+      L.store.style.transform  = 'scale('+(1.09 - 0.09*seg(p,0.22,0.82)).toFixed(4)+')';
+
+      L.inside.style.opacity   = seg(p,0.66,0.86);
+      L.inside.style.transform = 'scale('+(1.10 - 0.10*seg(p,0.64,1)).toFixed(4)+')';
+
+      // --- text phrases: "play hard outside" → "feel good inside" → brand ---
+      P.out.style.opacity   = 1 - seg(p,0.32,0.46);
+      P.out.style.transform = 'translateY('+(-20*seg(p,0.32,0.46)).toFixed(2)+'px)';
+
+      P.thru.style.opacity   = seg(p,0.48,0.60) * (1 - seg(p,0.72,0.84));
+      P.thru.style.transform = 'translateY('+(20*(1-seg(p,0.48,0.60)) - 20*seg(p,0.72,0.84)).toFixed(2)+'px)';
+
+      const br = seg(p,0.84,0.97);
+      P.brand.style.opacity   = br;
+      P.brand.style.transform = 'translateY('+(30*(1-br)).toFixed(2)+'px)';
+      P.brand.style.pointerEvents = br > 0.9 ? 'auto' : 'none';
+
+      if(cue) cue.style.opacity = (0.85*(1-seg(p,0,0.08))).toFixed(3);
+    }
+    function raf(){
+      eased = lerp(eased, target, 0.12);     // smoothing → the "buttery" feel
+      apply(eased);
+      requestAnimationFrame(raf);
+    }
+    window.addEventListener('scroll', read, {passive:true});
+    window.addEventListener('resize', read);
+    read(); apply(0); raf();
+  })();
+
+  // nav scroll state — stays transparent over the cinematic hero,
+  // solidifies once we're (almost) through it
+  const hdr = document.getElementById('hdr');
+  const cineTrack = document.querySelector('.cinema-track');
+  function navState(){
+    const threshold = cineTrack ? cineTrack.offsetHeight - window.innerHeight*0.55 : 40;
+    hdr.classList.toggle('scrolled', window.scrollY > threshold);
+  }
+  window.addEventListener('scroll', navState, {passive:true});
+  navState();
+
+  // mobile menu
+  const burger = document.getElementById('burger');
+  const nav = document.getElementById('nav');
+  burger.addEventListener('click', () => nav.classList.toggle('open'));
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+
+  // reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  }, {threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // live open/closed status
+  (function(){
+    const hours = {0:[10,17],1:[10,18],2:[10,18],3:[10,18],4:[10,18],5:[10,18],6:[9,18]};
+    const now = new Date();
+    const day = now.getDay();
+    const h = now.getHours() + now.getMinutes()/60;
+    const [open, close] = hours[day];
+    const isOpen = h >= open && h < close;
+    const box = document.getElementById('status');
+    const txt = document.getElementById('statusText');
+    if(isOpen){
+      box.classList.add('open');
+      const closeH = close > 12 ? (close-12)+'pm' : close+'am';
+      txt.textContent = 'Open now · until ' + closeH;
+    } else {
+      box.classList.add('closed');
+      txt.textContent = 'Closed right now';
+    }
+    const li = document.querySelector('.hours-list li[data-day="'+(day===0?0:day===6?6:1)+'"]');
+    if(li) li.classList.add('today');
+  })();
+</script>
+</body>
+</html>
