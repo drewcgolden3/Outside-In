@@ -1,129 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Our Story · Outside In · Cohasset, MA</title>
-<meta name="description" content="The story behind Outside In — a neighborhood outdoor outfitter on the South Shore, born from a love of the mountain, the river, and the trail, at 29 South Main St, Cohasset MA.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..700&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
-<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Story · Outside In — Cohasset, MA</title>
+  <meta name="description" content="The story behind Outside In — an independent outdoor apparel and lifestyle boutique in the heart of Cohasset village on Massachusetts' South Shore." />
+  <meta name="theme-color" content="#FAF6EF" />
+  <link rel="icon" href="assets/img/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<!-- NAV -->
-<header id="hdr">
-  <div class="wrap nav">
-    <a href="index.html" class="brand" aria-label="Outside In home"><img src="images/logo.png" alt="Outside In" class="brand-logo"></a>
-    <ul class="navlinks" id="nav">
-      <li><a href="brands.html">Brands</a></li>
-      <li><a href="story.html">Our Story</a></li>
-      <li><a href="rentals.html">Rentals</a></li>
-      <li><a href="index.html#visit">Visit</a></li>
-    </ul>
-    <a href="index.html#visit" class="nav-cta">Visit the Shop</a>
-    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
-  </div>
-</header>
+  <header class="site-header on-dark">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Outside In — home">
+        <img src="assets/img/logo.png" alt="" width="42" height="42" />
+        <span class="brand-text"><span class="brand-name">Outside In</span><span class="brand-sub">Cohasset, MA</span></span>
+      </a>
+      <nav class="primary-nav" aria-label="Primary">
+        <ul class="nav-links">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="brands.html">Brands</a></li>
+          <li><a class="nav-link" href="story.html" aria-current="page">Our Story</a></li>
+          <li><a class="nav-link" href="rentals.html">Rentals</a></li>
+          <li><a class="nav-link" href="visit.html">Visit</a></li>
+        </ul>
+        <a class="btn btn--ember" href="visit.html">Visit the Shop</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="ico-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="ico-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </header>
 
-<!-- PAGE HEADER -->
-<section class="page-head has-photo" style="--ph-img:url('images/cohasset-harbor.jpg')">
-  <div class="wrap">
-    <span class="eyebrow">Our story</span>
-    <h1>Born from a love of <em>the outdoors.</em></h1>
-    <div class="head-rule"></div>
-    <p class="lede">More than a shop — a hub for the people who run, ride, paddle, and ski the South Shore.</p>
-  </div>
-</section>
-
-<!-- STORY -->
-<section class="pad story">
-  <div class="wrap">
-    <div class="story-grid">
-      <div class="story-img reveal">
-        <img src="images/owner-storefront.jpg" alt="The owner outside the Outside In store in Cohasset">
-        <div class="badge"><b>29 South Main St</b>Cohasset, Massachusetts</div>
-      </div>
-      <div class="reveal">
-        <span class="eyebrow">How it started</span>
-        <h2 style="font-size:clamp(2rem,4vw,3.2rem);margin-top:14px">The right gear changes everything.</h2>
-        <p>A few years in Jackson, Wyoming barely scratched the outdoor itch. The more time spent on the mountain, the river, or the trail, the more it became clear: the right gear changes everything.</p>
-        <p>Outside In was born from that passion, and a desire to bring it home to the South Shore. Seeing you run by or cycle through town still brings a smile.</p>
-        <p>We're more than a shop. We're a hub, a place to get fitted, find your next race, join a training group, and talk to people who actually do this stuff.</p>
-      </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <nav class="mobile-links" aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="brands.html">Brands</a>
+      <a href="story.html" aria-current="page">Our Story</a>
+      <a href="rentals.html">Rentals</a>
+      <a href="visit.html">Visit</a>
+    </nav>
+    <div class="mobile-menu-foot">
+      <a class="btn btn--ember" href="visit.html">Visit the Shop</a>
+      <div class="mobile-contact"><span>29 South Main Street, Cohasset</span><a href="tel:+17813830346">(781) 383-0346</a></div>
     </div>
   </div>
-</section>
 
-<!-- PULLQUOTE -->
-<section class="pad brands">
-  <div class="wrap">
-    <p class="pullquote reveal" style="color:var(--cream);border-color:var(--clay);max-width:880px">"Play hard outside. Feel good inside." It's not just a tagline on the sign — it's how we think about every piece of gear we put on the shelves.</p>
-  </div>
-</section>
+  <main id="main">
+    <!-- ===================== PAGE HERO ===================== -->
+    <section class="hero hero--page center">
+      <div class="hero__media">
+        <img src="assets/img/owner-storefront.jpg" alt="The Outside In storefront and its owner on South Main Street, Cohasset" fetchpriority="high" />
+      </div>
+      <div class="hero__inner container">
+        <nav class="crumbs" aria-label="Breadcrumb" style="justify-content:center">
+          <a href="index.html">Home</a>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+          <span>Our Story</span>
+        </nav>
+        <p class="eyebrow hero__eyebrow" data-reveal="fade" style="justify-content:center">Independent · locally owned</p>
+        <h1 class="h-1" data-reveal style="--reveal-delay:80ms">Rooted in Cohasset,<br />built for the outdoors.</h1>
+        <p class="hero__sub lead" data-reveal style="--reveal-delay:200ms">A small boutique with a simple belief: the best gear should be close to home, and buying it should feel like talking to a friend.</p>
+      </div>
+    </section>
 
-<!-- WHAT WE'RE ABOUT -->
-<section class="pad story">
-  <div class="wrap">
-    <div class="story-grid">
-      <div class="reveal">
-        <span class="eyebrow">What we're about</span>
-        <h2 style="font-size:clamp(2rem,4vw,3.2rem);margin-top:14px">Real advice from people who get outside.</h2>
-        <p>We carry the labels we actually reach for ourselves — from technical shells and merino base layers to polarized optics and insulated bottles. If it's on our shelves, it's because we'd use it.</p>
-        <p>Stop in and we'll help you find the right fit for whatever's next: a first 5k, a winter on the mountain, a summer on the water, or just a better layer for the dog walk.</p>
-        <div class="btn-row">
-          <a href="brands.html" class="btn btn-outline">See the Brands <span class="arr">&rarr;</span></a>
-          <a href="index.html#visit" class="btn btn-dark">Visit the Shop <span class="arr">&rarr;</span></a>
+    <!-- ===================== NARRATIVE ===================== -->
+    <section class="section">
+      <div class="container">
+        <div class="split">
+          <div class="split__media" data-reveal="left">
+            <img src="assets/img/owner-storefront.jpg" alt="Owner standing in front of the shop's signature orange door at 29 South Main Street" loading="lazy" width="960" height="720" />
+            <div class="split__badge">
+              <span class="dot"></span>
+              <div><b>Since our first season</b><span>On South Main, by the harbor</span></div>
+            </div>
+          </div>
+          <div data-reveal="right" class="stack">
+            <p class="eyebrow">How it started</p>
+            <h2 class="h-2">The outdoors start at your front door.</h2>
+            <p class="lead">Outside In grew out of a love for the coast and the mountains — and a wish that the gear we relied on lived a little closer to home. So we opened a shop in the middle of Cohasset village, filled it with the brands we trust, and left the door open (the orange one, you can't miss it).</p>
+            <p>What you get is a boutique that feels personal. We know our inventory because we chose every piece of it. We can tell you which shell actually breathes, which sock survives a thru-hike, and which fleece you'll never take off. It's retail the way it used to be — and, we think, the way it should be.</p>
+          </div>
         </div>
       </div>
-      <div class="story-img reveal">
-        <img src="images/storefront-hero.jpg" alt="The Outside In storefront in Cohasset on a fall afternoon">
-        <div class="badge"><b>Outside In</b>Outdoor Athleticwear</div>
+    </section>
+
+    <!-- ===================== VALUES ===================== -->
+    <section class="section section--sand2">
+      <div class="container">
+        <div class="sec-head center" data-reveal style="margin-bottom:2.8rem">
+          <p class="eyebrow center" style="justify-content:center">What we believe</p>
+          <h2 class="h-2">Play hard outside. Feel good inside.</h2>
+          <p class="muted">It's on our logo for a reason — it's how we choose everything on the wall.</p>
+        </div>
+        <div class="grid-3" data-reveal-group>
+          <div class="card" data-reveal>
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 20l6-16 4 9 3-5 5 12z"/></svg></div>
+            <h3>Gear that goes the distance</h3>
+            <p>We stock brands built to be repaired and re-worn — because the most sustainable jacket is the one you already own.</p>
+          </div>
+          <div class="card" data-reveal>
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+            <h3>Proud to be local</h3>
+            <p>We're a Main Street shop in a village we love, part of the fabric of the South Shore — not a checkout page in a warehouse.</p>
+          </div>
+          <div class="card" data-reveal>
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2M10 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM21 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg></div>
+            <h3>Advice, not upselling</h3>
+            <p>Tell us where you're headed and we'll get you the right kit — nothing you don't need, and nothing you'll regret.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PULL QUOTE ===================== -->
+    <section class="section">
+      <div class="container center" style="max-width:56rem" data-reveal>
+        <svg viewBox="0 0 24 24" width="42" height="42" fill="var(--ember-soft)" style="margin:0 auto 1.2rem"><path d="M9 7H6a3 3 0 0 0-3 3v7h7v-7H6a3 3 0 0 1 3-3zm9 0h-3a3 3 0 0 0-3 3v7h7v-7h-4a3 3 0 0 1 3-3z"/></svg>
+        <p class="ethos__quote" style="text-align:center">We opened Outside In so that the next great adventure — and the layers that make it better — would only ever be a walk down Main Street away.</p>
+        <div class="ethos__sign" style="justify-content:center;margin-top:1.6rem">
+          <span class="line"></span>
+          <div style="text-align:left"><b>Tracy</b><br /><span>Owner, Outside In</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA ===================== -->
+    <section class="section section--ink">
+      <div class="container cta-strip">
+        <p class="eyebrow center" style="justify-content:center;color:var(--ember-soft)" data-reveal>The rest is best in person</p>
+        <h2 class="h-1" data-reveal style="margin-top:1rem">Come find your next favorite layer.</h2>
+        <div class="btn-row" data-reveal>
+          <a class="btn btn--ember" href="brands.html">Browse the Brands</a>
+          <a class="btn btn--ghost" href="visit.html" style="color:#EDE7DA;border-color:rgba(255,255,255,.35)">Plan a Visit</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <div class="footer-brand"><img src="assets/img/logo.png" alt="" width="44" height="44" /><b>Outside In</b></div>
+          <p>Your neighborhood outfitter on the South Shore — play hard outside, feel good inside.</p>
+          <div class="socials">
+            <a href="https://www.instagram.com/osicoh/" target="_blank" rel="noopener" aria-label="Outside In on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Outside In on Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H9v3h2v6h3v-6h2.5l.5-3H14V9z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col"><h4>Explore</h4><ul>
+          <li><a href="brands.html">Brands</a></li><li><a href="story.html">Our Story</a></li>
+          <li><a href="rentals.html">Bike Rentals</a></li><li><a href="visit.html">Visit Us</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Hours</h4><ul><li>Mon–Sat · 10am–5pm</li><li>Sunday · 11am–3pm</li></ul></div>
+        <div class="footer-col"><h4>Find Us</h4><ul>
+          <li><a href="https://maps.google.com/?q=29+South+Main+Street+Cohasset+MA+02025" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>29 South Main St, Cohasset, MA</a></li>
+          <li><a href="tel:+17813830346"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 5c0 8.3 6.7 15 15 15a2 2 0 0 0 2-2v-2.3a1 1 0 0 0-.8-1l-3-.6a1 1 0 0 0-1 .3l-1.1 1.1a12 12 0 0 1-5.3-5.3l1.1-1.1a1 1 0 0 0 .3-1l-.6-3a1 1 0 0 0-1-.8H6a2 2 0 0 0-2 2z"/></svg>(781) 383-0346</a></li>
+          <li><a href="mailto:tracy@outsideincohasset.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M4 7l8 6 8-6"/></svg>tracy@outsideincohasset.com</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Outside In · Cohasset, Massachusetts</p>
+        <p class="tag">Play hard outside · feel good inside</p>
       </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- FOOTER -->
-<footer>
-  <div class="wrap">
-    <div class="foot-grid">
-      <div>
-        <div class="foot-brand">Outside In<span class="dot">.</span></div>
-        <div class="foot-tag">Outdoor Athleticwear · Cohasset, MA</div>
-      </div>
-      <div class="foot-links">
-        <div class="foot-col">
-          <h4>Explore</h4>
-          <a href="brands.html">Brands</a>
-          <a href="story.html">Our Story</a>
-          <a href="rentals.html">Rentals</a>
-          <a href="index.html#visit">Visit</a>
-        </div>
-        <div class="foot-col">
-          <h4>Visit</h4>
-          <p>29 South Main Street</p>
-          <p>Cohasset, MA 02025</p>
-          <a href="tel:+17813830346">(781) 383-0346</a>
-          <a href="mailto:tracy@outsideincohasset.com">tracy@outsideincohasset.com</a>
-        </div>
-        <div class="foot-col">
-          <h4>Hours</h4>
-          <p>Mon to Sat · 10am to 5pm</p>
-          <p>Sun · 11am to 3pm</p>
-        </div>
-      </div>
-    </div>
-    <div class="foot-bottom">
-      <span>© <span id="yr"></span> Outside In. All rights reserved.</span>
-    </div>
-  </div>
-</footer>
-
-<script src="main.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

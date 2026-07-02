@@ -1,166 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bike Rentals · Outside In · Cohasset, MA</title>
-<meta name="description" content="Bike rentals at Outside In in Cohasset, MA. Reserve a bike online and explore the South Shore — cruise the village, the harbor, and beyond. Reserve your bikes at 29 South Main St.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..700&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
-<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bike Rentals · Outside In — Cohasset, MA</title>
+  <meta name="description" content="Rent a bike for the day at Outside In and explore Cohasset Harbor, Sandy Beach and the village. Daily reservations — call ahead to reserve your ride." />
+  <meta name="theme-color" content="#FAF6EF" />
+  <link rel="icon" href="assets/img/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<!-- NAV -->
-<header id="hdr">
-  <div class="wrap nav">
-    <a href="index.html" class="brand" aria-label="Outside In home"><img src="images/logo.png" alt="Outside In" class="brand-logo"></a>
-    <ul class="navlinks" id="nav">
-      <li><a href="brands.html">Brands</a></li>
-      <li><a href="story.html">Our Story</a></li>
-      <li><a href="rentals.html">Rentals</a></li>
-      <li><a href="index.html#visit">Visit</a></li>
-    </ul>
-    <a href="index.html#visit" class="nav-cta">Visit the Shop</a>
-    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
-  </div>
-</header>
+  <header class="site-header on-dark">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Outside In — home">
+        <img src="assets/img/logo.png" alt="" width="42" height="42" />
+        <span class="brand-text"><span class="brand-name">Outside In</span><span class="brand-sub">Cohasset, MA</span></span>
+      </a>
+      <nav class="primary-nav" aria-label="Primary">
+        <ul class="nav-links">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="brands.html">Brands</a></li>
+          <li><a class="nav-link" href="story.html">Our Story</a></li>
+          <li><a class="nav-link" href="rentals.html" aria-current="page">Rentals</a></li>
+          <li><a class="nav-link" href="visit.html">Visit</a></li>
+        </ul>
+        <a class="btn btn--ember" href="tel:+17813830346">Call to Reserve</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="ico-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="ico-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </header>
 
-<!-- PAGE HEADER -->
-<section class="page-head has-photo" style="--ph-img:url('images/storefront-hero.jpg')">
-  <div class="wrap">
-    <span class="eyebrow">Rentals</span>
-    <h1>Bike rentals on <em>South Main.</em></h1>
-    <div class="head-rule"></div>
-    <p class="lede">Don't own one yet? Rent one. Grab a bike for the day and explore the village, the harbor, and the South Shore.</p>
-  </div>
-</section>
-
-<!-- DETAIL -->
-<section class="pad story">
-  <div class="wrap">
-    <div class="story-grid">
-      <div class="story-img reveal">
-        <img src="images/storefront-fall.jpg" alt="The Outside In storefront in Cohasset">
-        <div class="badge"><b>Bike Rentals</b>29 South Main St</div>
-      </div>
-      <div class="reveal">
-        <span class="eyebrow">How it works</span>
-        <h2 style="font-size:clamp(2rem,4vw,3.2rem);margin-top:14px">Reserve, pick up, ride.</h2>
-        <p>We keep a fleet of bikes ready to go so you can explore the South Shore without committing to a full setup. Cruise into the village, ride along the harbor, or just enjoy a loop on a clear afternoon.</p>
-        <p>Reserve below and we'll confirm availability by email or phone. Not sure what you need? Tell us in the notes and we'll help you pick the right ride.</p>
-      </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <nav class="mobile-links" aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="brands.html">Brands</a>
+      <a href="story.html">Our Story</a>
+      <a href="rentals.html" aria-current="page">Rentals</a>
+      <a href="visit.html">Visit</a>
+    </nav>
+    <div class="mobile-menu-foot">
+      <a class="btn btn--ember" href="tel:+17813830346">Call to Reserve</a>
+      <div class="mobile-contact"><span>29 South Main Street, Cohasset</span><a href="tel:+17813830346">(781) 383-0346</a></div>
     </div>
   </div>
-</section>
 
-<!-- RESERVE ONLINE -->
-<section class="pad reserve" id="reserve">
-  <div class="wrap">
-    <div class="reserve-card reveal">
-      <span class="eyebrow">Reserve online</span>
-      <h2>Request your bikes.</h2>
-      <p class="intro">Fill this out and we'll get right back to you to lock in your reservation. Availability is seasonal, so the more notice the better.</p>
-
-      <!-- To send submissions straight to an inbox instead of opening the
-           customer's email app, replace the line below with:
-           <form id="reserveForm" action="https://formspree.io/f/YOUR_ID" method="POST">
-           ...and give each field a name="" attribute, then remove the form
-           handler in main.js. -->
-      <form id="reserveForm">
-        <div class="form-grid">
-          <div class="field">
-            <label for="r_name">Name</label>
-            <input id="r_name" type="text" autocomplete="name" required>
-          </div>
-          <div class="field">
-            <label for="r_email">Email</label>
-            <input id="r_email" type="email" autocomplete="email" required>
-          </div>
-          <div class="field">
-            <label for="r_phone">Phone</label>
-            <input id="r_phone" type="tel" autocomplete="tel">
-          </div>
-          <div class="field">
-            <label for="r_date">Preferred date</label>
-            <input id="r_date" type="date">
-          </div>
-          <div class="field">
-            <label for="r_duration">Duration</label>
-            <select id="r_duration">
-              <option>Half day</option>
-              <option selected>Full day</option>
-              <option>Multiple days</option>
-              <option>Weekly</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="r_qty">Number of bikes</label>
-            <input id="r_qty" type="number" min="1" max="12" value="1">
-          </div>
-          <div class="field full">
-            <label for="r_type">Bike type</label>
-            <select id="r_type">
-              <option selected>Not sure yet — help me pick</option>
-              <option>Adult bike</option>
-              <option>Kids' bike</option>
-              <option>A mix of both</option>
-            </select>
-          </div>
-          <div class="field full">
-            <label for="r_notes">Anything else?</label>
-            <textarea id="r_notes" placeholder="Sizes, pickup time, questions…"></textarea>
-          </div>
-        </div>
-        <div class="reserve-submit">
-          <button type="submit" class="btn btn-primary" style="background:var(--clay);color:var(--cream)">Send Reservation Request <span class="arr">&rarr;</span></button>
-          <span class="reserve-note">Prefer to call? <a href="tel:+17813830346" style="color:var(--clay-deep);font-weight:600">(781) 383-0346</a></span>
-        </div>
-      </form>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="wrap">
-    <div class="foot-grid">
-      <div>
-        <div class="foot-brand">Outside In<span class="dot">.</span></div>
-        <div class="foot-tag">Outdoor Athleticwear · Cohasset, MA</div>
+  <main id="main">
+    <!-- ===================== PAGE HERO ===================== -->
+    <section class="hero hero--page">
+      <div class="hero__media">
+        <img src="assets/img/paddleboard.jpg" alt="Gear leaning against the storefront on a sunny day in Cohasset village" fetchpriority="high" />
       </div>
-      <div class="foot-links">
-        <div class="foot-col">
-          <h4>Explore</h4>
-          <a href="brands.html">Brands</a>
-          <a href="story.html">Our Story</a>
-          <a href="rentals.html">Rentals</a>
-          <a href="index.html#visit">Visit</a>
-        </div>
-        <div class="foot-col">
-          <h4>Visit</h4>
-          <p>29 South Main Street</p>
-          <p>Cohasset, MA 02025</p>
-          <a href="tel:+17813830346">(781) 383-0346</a>
-          <a href="mailto:tracy@outsideincohasset.com">tracy@outsideincohasset.com</a>
-        </div>
-        <div class="foot-col">
-          <h4>Hours</h4>
-          <p>Mon to Sat · 10am to 5pm</p>
-          <p>Sun · 11am to 3pm</p>
+      <div class="hero__inner container">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+          <span>Rentals</span>
+        </nav>
+        <p class="eyebrow hero__eyebrow" data-reveal="fade">Explore the South Shore</p>
+        <h1 class="h-1" data-reveal style="--reveal-delay:80ms">Bike rentals in the heart of the village.</h1>
+        <p class="hero__sub lead" data-reveal style="--reveal-delay:200ms">Grab a bike for the day and roll straight from our door to the harbor, the beaches, and the back roads. Simple, daily, and ready when you are.</p>
+        <div class="btn-row" data-reveal style="--reveal-delay:320ms">
+          <a class="btn btn--ember" href="tel:+17813830346">Call to Reserve
+            <svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--light" href="visit.html">Find the Shop</a>
         </div>
       </div>
-    </div>
-    <div class="foot-bottom">
-      <span>© <span id="yr"></span> Outside In. All rights reserved.</span>
-    </div>
-  </div>
-</footer>
+    </section>
 
-<script src="main.js"></script>
+    <!-- ===================== HOW IT WORKS ===================== -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-head" data-reveal style="margin-bottom:2.6rem">
+          <p class="eyebrow">How it works</p>
+          <h2 class="h-2">Three steps to two wheels.</h2>
+          <p class="muted">No app, no kiosk — just a quick call and a friendly handoff at the counter.</p>
+        </div>
+        <div class="step-grid" data-reveal-group>
+          <div class="step" data-reveal>
+            <div class="step__num">01</div>
+            <h3>Reserve ahead</h3>
+            <p>Call the shop to check availability and hold a bike for your day. Weekends and sunny stretches book up fast.</p>
+          </div>
+          <div class="step" data-reveal>
+            <div class="step__num">02</div>
+            <h3>Pick up in the village</h3>
+            <p>Swing by 29 South Main Street. We'll size the bike, sort a helmet, and point you toward the best routes.</p>
+          </div>
+          <div class="step" data-reveal>
+            <div class="step__num">03</div>
+            <h3>Ride &amp; return</h3>
+            <p>Explore all day and roll back before we close. That's it — the coast is yours in between.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== DETAILS / PRICE ===================== -->
+    <section class="section section--sand2">
+      <div class="container">
+        <div class="split">
+          <div data-reveal="left" class="stack">
+            <p class="eyebrow">The details</p>
+            <h2 class="h-2">Daily rentals, done the easy way.</h2>
+            <ul class="feature-list">
+              <li>
+                <span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="6" cy="17" r="3.5"/><circle cx="18" cy="17" r="3.5"/><path d="M6 17l4-8h5l3 8M10 9l-1-3H7"/></svg></span>
+                <div><b>By the day</b><p>Rentals are reserved for the day so you're never watching a clock — plenty of time to make a loop of it.</p></div>
+              </li>
+              <li>
+                <span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2a7 7 0 0 0-7 7c0 1.9 1 3.6 2.2 5.2C8.7 16 11 18 12 22c1-4 3.3-6 4.8-7.8C18 12.6 19 10.9 19 9a7 7 0 0 0-7-7z"/></svg></span>
+                <div><b>Ride to the good stuff</b><p>Cohasset Harbor, Sandy Beach and the village common are all an easy pedal from the front door.</p></div>
+              </li>
+              <li>
+                <span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 5c0 8.3 6.7 15 15 15a2 2 0 0 0 2-2v-2.3a1 1 0 0 0-.8-1l-3-.6a1 1 0 0 0-1 .3l-1.1 1.1a12 12 0 0 1-5.3-5.3l1.1-1.1a1 1 0 0 0 .3-1l-.6-3a1 1 0 0 0-1-.8H6a2 2 0 0 0-2 2z"/></svg></span>
+                <div><b>Reserve by phone</b><p>Availability changes daily and with the weather — a quick call is the surest way to lock in your ride.</p></div>
+              </li>
+            </ul>
+          </div>
+          <div data-reveal="right">
+            <div class="price-card stack">
+              <p class="eyebrow" style="color:var(--ember-soft)"><span style="background:var(--ember-soft)"></span>Reserve a bike</p>
+              <h3 class="h-3" style="font-size:1.6rem">Ready to ride?</h3>
+              <p class="price-note">Call the shop for current daily rates and availability. We'll match you to the right bike and get you rolling.</p>
+              <div style="display:flex;flex-direction:column;gap:.7rem;margin-top:.5rem">
+                <a class="btn btn--ember" href="tel:+17813830346">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5c0 8.3 6.7 15 15 15a2 2 0 0 0 2-2v-2.3a1 1 0 0 0-.8-1l-3-.6a1 1 0 0 0-1 .3l-1.1 1.1a12 12 0 0 1-5.3-5.3l1.1-1.1a1 1 0 0 0 .3-1l-.6-3a1 1 0 0 0-1-.8H6a2 2 0 0 0-2 2z"/></svg>
+                  (781) 383-0346
+                </a>
+                <a class="btn btn--light" href="mailto:tracy@outsideincohasset.com" style="border-color:rgba(255,255,255,.4)">Email a Question</a>
+              </div>
+              <p class="price-note" style="border-top:1px solid rgba(255,255,255,.12);padding-top:1rem;margin-top:.5rem">Open Mon–Sat 10–5 · Sun 11–3 · 29 South Main St</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-head center" data-reveal style="margin-bottom:2.4rem">
+          <p class="eyebrow center" style="justify-content:center">Good to know</p>
+          <h2 class="h-2">Rental questions, answered.</h2>
+        </div>
+        <div class="faq" data-reveal>
+          <details>
+            <summary>Do I need to reserve in advance? <span class="plus" aria-hidden="true"></span></summary>
+            <p>We recommend it. Bikes are limited and go quickly on weekends and sunny days. A quick call to (781) 383-0346 is the best way to make sure one's waiting for you.</p>
+          </details>
+          <details>
+            <summary>How long is a rental? <span class="plus" aria-hidden="true"></span></summary>
+            <p>Rentals are by the day, so you've got from pickup until closing to explore. Just have the bike back before we close for the evening.</p>
+          </details>
+          <details>
+            <summary>Where's a good place to ride? <span class="plus" aria-hidden="true"></span></summary>
+            <p>From the shop you can reach Cohasset Harbor, the village common and Sandy Beach with an easy ride. Tell us what you're up for and we'll sketch out a route when you pick up.</p>
+          </details>
+          <details>
+            <summary>Do you rent paddleboards too? <span class="plus" aria-hidden="true"></span></summary>
+            <p>Rentals are currently bikes only. We do carry paddleboards and water gear for sale in the shop, though — stop in or give us a call if you're looking to gear up for the season.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA ===================== -->
+    <section class="section section--ink">
+      <div class="container cta-strip">
+        <p class="eyebrow center" style="justify-content:center;color:var(--ember-soft)" data-reveal>Sunny day calling?</p>
+        <h2 class="h-1" data-reveal style="margin-top:1rem">Reserve your bike and get out there.</h2>
+        <div class="btn-row" data-reveal>
+          <a class="btn btn--ember" href="tel:+17813830346">Call (781) 383-0346</a>
+          <a class="btn btn--ghost" href="visit.html" style="color:#EDE7DA;border-color:rgba(255,255,255,.35)">Get Directions</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <div class="footer-brand"><img src="assets/img/logo.png" alt="" width="44" height="44" /><b>Outside In</b></div>
+          <p>Your neighborhood outfitter on the South Shore — play hard outside, feel good inside.</p>
+          <div class="socials">
+            <a href="https://www.instagram.com/osicoh/" target="_blank" rel="noopener" aria-label="Outside In on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Outside In on Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H9v3h2v6h3v-6h2.5l.5-3H14V9z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col"><h4>Explore</h4><ul>
+          <li><a href="brands.html">Brands</a></li><li><a href="story.html">Our Story</a></li>
+          <li><a href="rentals.html">Bike Rentals</a></li><li><a href="visit.html">Visit Us</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Hours</h4><ul><li>Mon–Sat · 10am–5pm</li><li>Sunday · 11am–3pm</li></ul></div>
+        <div class="footer-col"><h4>Find Us</h4><ul>
+          <li><a href="https://maps.google.com/?q=29+South+Main+Street+Cohasset+MA+02025" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>29 South Main St, Cohasset, MA</a></li>
+          <li><a href="tel:+17813830346"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 5c0 8.3 6.7 15 15 15a2 2 0 0 0 2-2v-2.3a1 1 0 0 0-.8-1l-3-.6a1 1 0 0 0-1 .3l-1.1 1.1a12 12 0 0 1-5.3-5.3l1.1-1.1a1 1 0 0 0 .3-1l-.6-3a1 1 0 0 0-1-.8H6a2 2 0 0 0-2 2z"/></svg>(781) 383-0346</a></li>
+          <li><a href="mailto:tracy@outsideincohasset.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M4 7l8 6 8-6"/></svg>tracy@outsideincohasset.com</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Outside In · Cohasset, Massachusetts</p>
+        <p class="tag">Play hard outside · feel good inside</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

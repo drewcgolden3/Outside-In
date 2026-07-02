@@ -1,177 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Brands · Outside In · Cohasset, MA</title>
-<meta name="description" content="The brands carried at Outside In in Cohasset, MA — apparel, gear, footwear, eyewear and more from Patagonia, Cotopaxi, Maui Jim, Smith, KÜHL, Mammut, Rab and many others.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..700&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
-<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brands &amp; Collections · Outside In — Cohasset, MA</title>
+  <meta name="description" content="Explore the brands we carry at Outside In — Patagonia, Cotopaxi, KÜHL, Maui Jim, Smith, Darn Tough, Icebreaker, Mammut, Rab, Free Fly, Flylow and prAna — organized by category." />
+  <meta name="theme-color" content="#FAF6EF" />
+  <link rel="icon" href="assets/img/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<!-- NAV -->
-<header id="hdr">
-  <div class="wrap nav">
-    <a href="index.html" class="brand" aria-label="Outside In home"><img src="images/logo.png" alt="Outside In" class="brand-logo"></a>
-    <ul class="navlinks" id="nav">
-      <li><a href="brands.html">Brands</a></li>
-      <li><a href="story.html">Our Story</a></li>
-      <li><a href="rentals.html">Rentals</a></li>
-      <li><a href="index.html#visit">Visit</a></li>
-    </ul>
-    <a href="index.html#visit" class="nav-cta">Visit the Shop</a>
-    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
-  </div>
-</header>
-
-<!-- PAGE HEADER -->
-<section class="page-head has-photo" style="--ph-img:url('images/cotopaxi.jpg')">
-  <div class="wrap">
-    <span class="eyebrow">What we carry</span>
-    <h1>The brands we <em>believe in.</em></h1>
-    <div class="head-rule"></div>
-    <p class="lede">From technical shells to everyday layers, polarized optics to insulated bottles, every label on our shelves earns its place. Here's who you'll find in the shop.</p>
-  </div>
-</section>
-
-<!-- GALLERY -->
-<section class="pad" id="store">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="eyebrow">A peek inside</span>
-      <h2>Just a glimpse of what's <em>waiting for you.</em></h2>
-      <p>Racks, shelves, and walls packed with gear, apparel, footwear, eyewear, and accessories. There's always something new to discover.</p>
+  <header class="site-header on-dark">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Outside In — home">
+        <img src="assets/img/logo.png" alt="" width="42" height="42" />
+        <span class="brand-text"><span class="brand-name">Outside In</span><span class="brand-sub">Cohasset, MA</span></span>
+      </a>
+      <nav class="primary-nav" aria-label="Primary">
+        <ul class="nav-links">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="brands.html" aria-current="page">Brands</a></li>
+          <li><a class="nav-link" href="story.html">Our Story</a></li>
+          <li><a class="nav-link" href="rentals.html">Rentals</a></li>
+          <li><a class="nav-link" href="visit.html">Visit</a></li>
+        </ul>
+        <a class="btn btn--ember" href="visit.html">Visit the Shop</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="ico-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="ico-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
     </div>
-    <div class="gallery-grid">
-      <div class="g-card g-a reveal">
-        <img src="images/patagonia.jpg" alt="Patagonia jackets and sweaters">
-        <div class="cap"><small>Apparel</small><h3>Patagonia</h3></div>
-      </div>
-      <div class="g-card g-b reveal">
-        <img src="images/cotopaxi.jpg" alt="Cotopaxi bags and gear">
-        <div class="cap"><small>Bags &amp; Packs</small><h3>Cotopaxi</h3></div>
-      </div>
-      <div class="g-card g-c reveal">
-        <img src="images/paddleboard.jpg" alt="Stand up paddle boards">
-        <div class="cap"><small>Water</small><h3>Paddle Boards</h3></div>
-      </div>
-      <div class="g-card g-d reveal">
-        <img src="images/flylow-gloves.jpg" alt="Flylow gloves and mittens">
-        <div class="cap"><small>Winter Gear</small><h3>Flylow Gloves</h3></div>
-      </div>
-      <div class="g-card g-e reveal">
-        <img src="images/sneakers-accessories.jpg" alt="Sneakers and accessories">
-        <div class="cap"><small>Footwear &amp; Accessories</small><h3>Sneakers &amp; Hats</h3></div>
-      </div>
-    </div>
-    <p class="gallery-note reveal">These photos are just a small taste. The store is packed with much more, and you really have to come see it.</p>
-  </div>
-</section>
+  </header>
 
-<!-- FULL BRAND WALL -->
-<section class="pad brands" id="brands">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="eyebrow">Our brands</span>
-      <h2>Every label on the <em>shelves.</em></h2>
-      <p>Tap any brand to visit their site. The same makers we trust on the trail, the river, and the mountain.</p>
-    </div>
-    <p class="grid-note reveal">Links open each brand's official website in a new tab.</p>
-    <div class="brand-grid reveal">
-      <a class="brand-cell" href="https://www.mauijim.com" target="_blank" rel="noopener"><span class="b-name">Maui Jim <span class="ext">&#8599;</span></span></a>
-      <a class="brand-cell" href="https://www.zealoptics.com" target="_blank" rel="noopener"><span class="b-name">Zeal <span class="ext">&#8599;</span></span><span class="owned">Part of Maui Jim</span></a>
-      <a class="brand-cell" href="https://www.smithoptics.com" target="_blank" rel="noopener"><span class="b-name">Smith Optics <span class="ext">&#8599;</span></span></a>
-      <a class="brand-cell" href="https://www.blenderseyewear.com" target="_blank" rel="noopener"><span class="b-name">Blenders <span class="ext">&#8599;</span></span><span class="owned">Part of Smith</span></a>
-      <a class="brand-cell" href="https://www.suncloudoptics.com" target="_blank" rel="noopener"><span class="b-name">Suncloud <span class="ext">&#8599;</span></span><span class="owned">Part of Smith</span></a>
-      <a class="brand-cell" href="https://darntough.com" target="_blank" rel="noopener"><span class="b-name">Darn Tough <span class="ext">&#8599;</span></span><span class="owned">Vermont</span></a>
-      <a class="brand-cell" href="https://pistildesigns.com" target="_blank" rel="noopener"><span class="b-name">Pistil Designs <span class="ext">&#8599;</span></span></a>
-      <a class="brand-cell" href="https://www.camelbak.com" target="_blank" rel="noopener"><span class="b-name">CamelBak <span class="ext">&#8599;</span></span></a>
-      <a class="brand-cell" href="https://www.hydroflask.com" target="_blank" rel="noopener"><span class="b-name">Hydro Flask <span class="ext">&#8599;</span></span></a>
-      <a class="brand-cell" href="https://www.carvedesigns.com" target="_blank" rel="noopener"><span class="b-name">Carve Designs <span class="ext">&#8599;</span></span></a>
-      <a class="brand-cell" href="https://www.phiecollective.com" target="_blank" rel="noopener"><span class="b-name">Phie Collective <span class="ext">&#8599;</span></span></a>
-      <a class="brand-cell" href="https://krimsonklover.com" target="_blank" rel="noopener"><span class="b-name">Krimson Klover <span class="ext">&#8599;</span></span></a>
-      <a class="brand-cell" href="https://www.karitraa.com" target="_blank" rel="noopener"><span class="b-name">Kari Traa <span class="ext">&#8599;</span></span></a>
-      <a class="brand-cell" href="https://www.cotopaxi.com" target="_blank" rel="noopener"><span class="b-name">Cotopaxi <span class="ext">&#8599;</span></span></a>
-      <a class="brand-cell" href="https://www.patagonia.com" target="_blank" rel="noopener"><span class="b-name">Patagonia <span class="ext">&#8599;</span></span></a>
-      <a class="brand-cell" href="https://www.kuhl.com" target="_blank" rel="noopener"><span class="b-name">KÜHL <span class="ext">&#8599;</span></span></a>
-      <a class="brand-cell" href="https://www.mountainkhakis.com" target="_blank" rel="noopener"><span class="b-name">Mountain Khakis <span class="ext">&#8599;</span></span></a>
-      <a class="brand-cell" href="https://dakotagrizzly.com" target="_blank" rel="noopener"><span class="b-name">Dakota Grizzly <span class="ext">&#8599;</span></span></a>
-      <a class="brand-cell" href="https://flylowgear.com" target="_blank" rel="noopener"><span class="b-name">Flylow <span class="ext">&#8599;</span></span></a>
-      <a class="brand-cell" href="https://www.freeflyapparel.com" target="_blank" rel="noopener"><span class="b-name">Free Fly <span class="ext">&#8599;</span></span></a>
-      <a class="brand-cell" href="https://www.harimari.com" target="_blank" rel="noopener"><span class="b-name">Hari Mari <span class="ext">&#8599;</span></span></a>
-      <a class="brand-cell" href="https://www.ibex.com" target="_blank" rel="noopener"><span class="b-name">Ibex <span class="ext">&#8599;</span></span></a>
-      <a class="brand-cell" href="https://www.icebreaker.com" target="_blank" rel="noopener"><span class="b-name">Icebreaker <span class="ext">&#8599;</span></span></a>
-      <a class="brand-cell" href="https://www.tascperformance.com" target="_blank" rel="noopener"><span class="b-name">Tasc <span class="ext">&#8599;</span></span></a>
-      <a class="brand-cell" href="https://indyeva.com" target="_blank" rel="noopener"><span class="b-name">Indyeva <span class="ext">&#8599;</span></span></a>
-      <a class="brand-cell" href="https://www.prana.com" target="_blank" rel="noopener"><span class="b-name">prAna <span class="ext">&#8599;</span></span></a>
-      <a class="brand-cell" href="https://www.splendid.com" target="_blank" rel="noopener"><span class="b-name">Splendid <span class="ext">&#8599;</span></span></a>
-      <a class="brand-cell" href="https://www.sanctuaryclothing.com" target="_blank" rel="noopener"><span class="b-name">Sanctuary <span class="ext">&#8599;</span></span></a>
-      <a class="brand-cell" href="https://www.mammut.com" target="_blank" rel="noopener"><span class="b-name">Mammut <span class="ext">&#8599;</span></span></a>
-      <a class="brand-cell" href="https://rab.equipment" target="_blank" rel="noopener"><span class="b-name">Rab Equipment <span class="ext">&#8599;</span></span></a>
-      <a class="brand-cell" href="https://mountainsmith.com" target="_blank" rel="noopener"><span class="b-name">Mountainsmith <span class="ext">&#8599;</span></span></a>
-      <a class="brand-cell" href="https://us.oneill.com" target="_blank" rel="noopener"><span class="b-name">O'Neill <span class="ext">&#8599;</span></span></a>
-      <a class="brand-cell" href="https://oncept.nyc" target="_blank" rel="noopener"><span class="b-name">Oncept <span class="ext">&#8599;</span></span></a>
-      <a class="brand-cell" href="https://www.savetheduck.com" target="_blank" rel="noopener"><span class="b-name">Save The Duck <span class="ext">&#8599;</span></span></a>
+  <div class="mobile-menu" id="mobile-menu">
+    <nav class="mobile-links" aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="brands.html" aria-current="page">Brands</a>
+      <a href="story.html">Our Story</a>
+      <a href="rentals.html">Rentals</a>
+      <a href="visit.html">Visit</a>
+    </nav>
+    <div class="mobile-menu-foot">
+      <a class="btn btn--ember" href="visit.html">Visit the Shop</a>
+      <div class="mobile-contact"><span>29 South Main Street, Cohasset</span><a href="tel:+17813830346">(781) 383-0346</a></div>
     </div>
   </div>
-</section>
 
-<!-- CLOSING CTA -->
-<section class="pad rentals">
-  <div class="wrap">
-    <div class="rentals-flex reveal">
-      <div>
-        <span class="eyebrow">In person</span>
-        <h2>See them <em>for yourself.</em></h2>
-        <p>Photos only go so far. Come try things on, get fitted, and talk to people who actually use this gear.</p>
+  <main id="main">
+    <!-- ===================== PAGE HERO ===================== -->
+    <section class="hero hero--page">
+      <div class="hero__media">
+        <img src="assets/img/patagonia.jpg" alt="A folded stack of Patagonia jackets in muted colors" fetchpriority="high" />
       </div>
-      <a href="index.html#visit" class="btn btn-primary">Visit the Shop <span class="arr">&rarr;</span></a>
-    </div>
-  </div>
-</section>
+      <div class="hero__inner container">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+          <span>Brands</span>
+        </nav>
+        <p class="eyebrow hero__eyebrow" data-reveal="fade">A well-edited wall</p>
+        <h1 class="h-1" data-reveal style="--reveal-delay:80ms">The brands we carry.</h1>
+        <p class="hero__sub lead" data-reveal style="--reveal-delay:200ms">We don't try to stock everything — just the labels that earn their place. Here's what you'll find on the racks, organized by how you actually shop.</p>
+      </div>
+    </section>
 
-<!-- FOOTER -->
-<footer>
-  <div class="wrap">
-    <div class="foot-grid">
-      <div>
-        <div class="foot-brand">Outside In<span class="dot">.</span></div>
-        <div class="foot-tag">Outdoor Athleticwear · Cohasset, MA</div>
-      </div>
-      <div class="foot-links">
-        <div class="foot-col">
-          <h4>Explore</h4>
-          <a href="brands.html">Brands</a>
-          <a href="story.html">Our Story</a>
-          <a href="rentals.html">Rentals</a>
-          <a href="index.html#visit">Visit</a>
-        </div>
-        <div class="foot-col">
-          <h4>Visit</h4>
-          <p>29 South Main Street</p>
-          <p>Cohasset, MA 02025</p>
-          <a href="tel:+17813830346">(781) 383-0346</a>
-          <a href="mailto:tracy@outsideincohasset.com">tracy@outsideincohasset.com</a>
-        </div>
-        <div class="foot-col">
-          <h4>Hours</h4>
-          <p>Mon to Sat · 10am to 5pm</p>
-          <p>Sun · 11am to 3pm</p>
+    <!-- ===================== INTRO STRIP ===================== -->
+    <section class="section--tight section" style="padding-block:clamp(2.5rem,5vw,3.5rem)">
+      <div class="container">
+        <div class="grid-3" data-reveal-group>
+          <div class="card" data-reveal>
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 16.5 7.1 18.2l.9-5.5-4-3.9L9.5 8z"/></svg></div>
+            <h3>Chosen, not stocked</h3>
+            <p>Every brand here is one we'd wear ourselves — vetted for fit, durability and how it holds up to a New England winter.</p>
+          </div>
+          <div class="card" data-reveal>
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 7L9 18l-5-5"/></svg></div>
+            <h3>Real advice</h3>
+            <p>Come in with a plan — a hike, a paddle, a flight somewhere cold — and leave with the right layers, not the most expensive ones.</p>
+          </div>
+          <div class="card" data-reveal>
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 7h18M6 7V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2M5 7l1 13a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1l1-13"/></svg></div>
+            <h3>Built to last</h3>
+            <p>From Darn Tough's lifetime socks to Patagonia's repair-first ethos, we favor gear designed to be kept, not replaced.</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="foot-bottom">
-      <span>© <span id="yr"></span> Outside In. All rights reserved.</span>
-    </div>
-  </div>
-</footer>
+    </section>
 
-<script src="main.js"></script>
+    <!-- ===================== BRAND CATEGORIES ===================== -->
+    <section class="section section--sand2">
+      <div class="container">
+        <div class="sec-head center" data-reveal style="margin-bottom:3rem">
+          <p class="eyebrow center" style="justify-content:center">Shop by category</p>
+          <h2 class="h-2">Twelve labels, six ways to browse.</h2>
+        </div>
+
+        <div class="brand-cats">
+          <div id="apparel" data-reveal>
+            <div class="brand-cat__head">
+              <h3>Apparel &amp; Layers</h3>
+              <span>Fleece · shells · base layers · everyday</span>
+            </div>
+            <div class="chips">
+              <span class="chip">Patagonia</span><span class="chip">KÜHL</span><span class="chip">Free Fly</span>
+              <span class="chip">prAna</span><span class="chip">Icebreaker</span><span class="chip">Mammut</span><span class="chip">Rab</span>
+            </div>
+          </div>
+
+          <div id="bags" data-reveal>
+            <div class="brand-cat__head">
+              <h3>Bags &amp; Packs</h3>
+              <span>Daypacks · hip packs · totes</span>
+            </div>
+            <div class="chips">
+              <span class="chip">Cotopaxi</span><span class="chip">Patagonia</span><span class="chip">Mammut</span>
+            </div>
+          </div>
+
+          <div id="footwear" data-reveal>
+            <div class="brand-cat__head">
+              <h3>Footwear &amp; Accessories</h3>
+              <span>Sneakers · socks · hats · essentials</span>
+            </div>
+            <div class="chips">
+              <span class="chip">Darn Tough</span><span class="chip">prAna</span><span class="chip">Free Fly</span><span class="chip">Cotopaxi</span>
+            </div>
+          </div>
+
+          <div id="winter" data-reveal>
+            <div class="brand-cat__head">
+              <h3>Winter Gear</h3>
+              <span>Gloves · mittens · insulation · merino</span>
+            </div>
+            <div class="chips">
+              <span class="chip">Flylow</span><span class="chip">Smith Optics</span><span class="chip">Icebreaker</span><span class="chip">Rab</span><span class="chip">Patagonia</span>
+            </div>
+          </div>
+
+          <div id="eyewear" data-reveal>
+            <div class="brand-cat__head">
+              <h3>Eyewear</h3>
+              <span>Polarized · performance · everyday</span>
+            </div>
+            <div class="chips">
+              <span class="chip">Maui Jim</span><span class="chip">Smith Optics</span>
+            </div>
+          </div>
+
+          <div id="water" data-reveal>
+            <div class="brand-cat__head">
+              <h3>On the Water</h3>
+              <span>Paddleboards · sun shirts · quick-dry</span>
+            </div>
+            <div class="chips">
+              <span class="chip">Free Fly</span><span class="chip">prAna</span><span class="chip">Paddleboards</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SHOWCASE ===================== -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-head" data-reveal style="margin-bottom:2.4rem">
+          <p class="eyebrow">On the floor right now</p>
+          <h2 class="h-2">A look inside the shop.</h2>
+          <p class="muted">Fresh arrivals and everyday favorites, photographed on our own racks in Cohasset.</p>
+        </div>
+        <div class="showcase" data-reveal-group>
+          <div class="shot" data-reveal>
+            <img src="assets/img/cotopaxi.jpg" alt="Colorful Cotopaxi hip pack and tote bags" loading="lazy" />
+            <div class="shot__cap"><b>Cotopaxi</b><span>Do-good color, on your hip</span></div>
+          </div>
+          <div class="shot" data-reveal>
+            <img src="assets/img/flylow-gloves.jpg" alt="Tan and black Flylow ski gloves and mittens" loading="lazy" />
+            <div class="shot__cap"><b>Flylow</b><span>Leather gloves for real winter</span></div>
+          </div>
+          <div class="shot" data-reveal>
+            <img src="assets/img/sneakers-accessories.jpg" alt="Sneakers, a felt hat and woven accessories on a display table" loading="lazy" />
+            <div class="shot__cap"><b>Footwear &amp; Finds</b><span>Sneakers, hats &amp; small goods</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA ===================== -->
+    <section class="section section--ink">
+      <div class="container cta-strip">
+        <p class="eyebrow center" style="justify-content:center;color:var(--ember-soft)" data-reveal>See it in person</p>
+        <h2 class="h-1" data-reveal style="margin-top:1rem">The full range lives on Main Street.</h2>
+        <p class="lead" data-reveal style="color:#C9C7BC;max-width:50ch;margin:1.2rem auto 0">Inventory shifts with the seasons. Swing by to see what's landed, or call ahead and we'll set something aside.</p>
+        <div class="btn-row" data-reveal>
+          <a class="btn btn--ember" href="visit.html">Plan Your Visit</a>
+          <a class="btn btn--ghost" href="tel:+17813830346" style="color:#EDE7DA;border-color:rgba(255,255,255,.35)">Call the Shop</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <div class="footer-brand"><img src="assets/img/logo.png" alt="" width="44" height="44" /><b>Outside In</b></div>
+          <p>Your neighborhood outfitter on the South Shore — play hard outside, feel good inside.</p>
+          <div class="socials">
+            <a href="https://www.instagram.com/osicoh/" target="_blank" rel="noopener" aria-label="Outside In on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Outside In on Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H9v3h2v6h3v-6h2.5l.5-3H14V9z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col"><h4>Explore</h4><ul>
+          <li><a href="brands.html">Brands</a></li><li><a href="story.html">Our Story</a></li>
+          <li><a href="rentals.html">Bike Rentals</a></li><li><a href="visit.html">Visit Us</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Hours</h4><ul><li>Mon–Sat · 10am–5pm</li><li>Sunday · 11am–3pm</li></ul></div>
+        <div class="footer-col"><h4>Find Us</h4><ul>
+          <li><a href="https://maps.google.com/?q=29+South+Main+Street+Cohasset+MA+02025" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>29 South Main St, Cohasset, MA</a></li>
+          <li><a href="tel:+17813830346"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 5c0 8.3 6.7 15 15 15a2 2 0 0 0 2-2v-2.3a1 1 0 0 0-.8-1l-3-.6a1 1 0 0 0-1 .3l-1.1 1.1a12 12 0 0 1-5.3-5.3l1.1-1.1a1 1 0 0 0 .3-1l-.6-3a1 1 0 0 0-1-.8H6a2 2 0 0 0-2 2z"/></svg>(781) 383-0346</a></li>
+          <li><a href="mailto:tracy@outsideincohasset.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M4 7l8 6 8-6"/></svg>tracy@outsideincohasset.com</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Outside In · Cohasset, Massachusetts</p>
+        <p class="tag">Play hard outside · feel good inside</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
