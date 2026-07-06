@@ -563,9 +563,10 @@ a.chip:hover::after { opacity: 1; transform: translate(1px,-1px); }
 .bcat:nth-child(even) .bcat__media { order: 2; }
 .bcat__media {
   position: relative; border-radius: var(--radius-lg); overflow: hidden;
-  aspect-ratio: 5 / 4; box-shadow: var(--shadow-md); background: var(--stone);
+  box-shadow: var(--shadow-md); background: var(--stone);
+  align-self: center;
 }
-.bcat__media img { width: 100%; height: 100%; object-fit: cover; transition: transform .9s var(--ease-out); }
+.bcat__media img { width: 100%; height: auto; display: block; transition: transform .9s var(--ease-out); }
 .bcat:hover .bcat__media img { transform: scale(1.04); }
 .bcat__media--plain { display: grid; place-items: center; background: linear-gradient(140deg, var(--harbor), var(--harbor-ink)); color: var(--ember-soft); }
 .bcat__media--plain svg { width: 88px; height: 88px; }
@@ -573,7 +574,6 @@ a.chip:hover::after { opacity: 1; transform: translate(1px,-1px); }
 @media (max-width: 860px) {
   .bcat { grid-template-columns: 1fr; gap: 1.3rem; }
   .bcat:nth-child(even) .bcat__media { order: 0; }
-  .bcat__media { aspect-ratio: 16 / 10; }
 }
 
 /* Feature image card (brands page) */
