@@ -401,6 +401,18 @@ body.menu-open .mobile-links a { animation: menuItemIn .5s var(--ease-out) forwa
   font-size: clamp(1.6rem, 3vw, 2.35rem); line-height: 1.28; letter-spacing: -.01em;
 }
 .ethos__quote em { color: var(--ember-deep); font-style: italic; }
+/* Mission statement (Our Story) — body font for cohesion, serif tagline flourish */
+.story-statement {
+  font-family: var(--font-body); font-weight: 400;
+  font-size: clamp(1.15rem, 2vw, 1.55rem); line-height: 1.6; letter-spacing: -.003em;
+  color: var(--ink-2);
+}
+.story-statement b { color: var(--ember-deep); font-weight: 600; }
+.story-statement .tagline {
+  display: block; margin-top: 1.35rem;
+  font-family: var(--font-display); font-style: italic; font-weight: 500;
+  font-size: 1.4em; line-height: 1.2; letter-spacing: -.01em; color: var(--ink);
+}
 .ethos__sign { margin-top: 1.6rem; display: flex; align-items: center; gap: .9rem; }
 .ethos__sign b { font-family: var(--font-display); font-size: 1.1rem; font-weight: 600; }
 .ethos__sign span { font-size: .85rem; color: var(--ink-3); }
