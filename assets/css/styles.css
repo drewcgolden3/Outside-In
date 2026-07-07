@@ -699,6 +699,8 @@ a.chip:hover::after { opacity: 1; transform: translate(1px,-1px); }
 .footer-bottom { margin-top: 3rem; padding-top: 1.8rem; border-top: 1px solid rgba(255,255,255,.09); display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
 .footer-bottom p { font-size: .85rem; color: #85837A; }
 .footer-bottom .tag { font-family: var(--font-display); font-style: italic; color: var(--ember-soft); }
+.footer-bottom a { color: #A9A79D; text-decoration: underline; text-underline-offset: 2px; text-decoration-color: rgba(255,255,255,.25); transition: color .25s var(--ease); }
+.footer-bottom a:hover { color: var(--ember-soft); }
 
 /* ============================================================
    Responsive
